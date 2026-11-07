@@ -1,12 +1,33 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>השוואת פלטפורמות מסחר</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>השוואת פלטפורמות מסחר עצמאי בישראל</title>
+<meta name="description" content="השוואה בין מיטב טרייד, אקסלנס טרייד, אינטראקטיב ישראל ובלינק: מינימום הפקדה, עמלות בארץ ובחו&quot;ל, דמי טיפול, המרת מט&quot;ח, יתרונות וחסרונות — ולמי כל פלטפורמה מתאימה.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="he_IL">
+<meta property="og:title" content="איזו פלטפורמת מסחר עצמאי מתאימה לך?">
+<meta property="og:description" content="השוואת עמלות, דמי טיפול, יתרונות וחסרונות של מיטב טרייד, אקסלנס טרייד, אינטראקטיב ישראל ובלינק.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#F1EEE7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141A22" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231F3A5F'/%3E%3Cpath d='M7 22l6-6 4 4 8-9' fill='none' stroke='%23E0A463' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+  /* מחיל את ערכת הצבעים השמורה לפני הציור הראשון, כדי למנוע הבהוב */
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
 <style>
   :root {
-    /* פריסה: מסמך עריכתי בעמודה אחת — כותרת קצרה, טבלת השוואה מהירה הגוללת לרוחב, ואחריה ארבעה "תיקי פלטפורמה" באותה אנטומיה (שם/תג, תיאור, יתרונות/חסרונות בשתי עמודות, כפתור הצטרפות) */
+    /* פריסה: מסמך עריכתי בעמודה אחת — כותרת, "בקצרה", טבלת השוואה, ארבעה כרטיסי פלטפורמה באותה אנטומיה, וגילוי נאות */
     --bg: #F1EEE7;
     --surface: #FFFFFF;
     --surface-2: #F8F5EF;
@@ -14,13 +35,16 @@
     --fg-muted: #5B6472;
     --accent: #1F3A5F;
     --accent-soft: #E7ECF1;
-    --accent-2: #B8793A;
+    --accent-2: #8F5A26;
     --accent-2-soft: #F3E6D5;
+    --cta-bg: #8F5A26;
+    --cta-fg: #FFFFFF;
     --good: #2F7A4D;
     --bad: #A2403B;
     --border: #DDD6C8;
     --font-display: 'Frank Ruhl Libre', Georgia, 'Times New Roman', serif;
     --font-body: 'Noto Sans Hebrew', Arial, sans-serif;
+    color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
@@ -33,6 +57,8 @@
       --accent-soft: #223042;
       --accent-2: #E0A463;
       --accent-2-soft: #332A1E;
+      --cta-bg: #E0A463;
+      --cta-fg: #1A1208;
       --good: #63B183;
       --bad: #DD7A73;
       --border: #2B333F;
@@ -49,73 +75,116 @@
     --accent-soft: #223042;
     --accent-2: #E0A463;
     --accent-2-soft: #332A1E;
+    --cta-bg: #E0A463;
+    --cta-fg: #1A1208;
     --good: #63B183;
     --bad: #DD7A73;
     --border: #2B333F;
     color-scheme: dark;
   }
 
-  html { direction: rtl; }
   * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
   body {
-    direction: rtl;
-    text-align: right;
     margin: 0;
+    text-align: right;
     background: var(--bg);
     color: var(--fg);
     font-family: var(--font-body);
+    font-size: 16px;
     line-height: 1.65;
     padding-left: max(16px, env(safe-area-inset-left, 0px));
     padding-right: max(16px, env(safe-area-inset-right, 0px));
     font-variant-numeric: tabular-nums;
   }
-  .page { max-width: 880px; margin: 0 auto; padding-block: 36px 72px; }
+  img { max-width: 100%; }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding-top: calc(36px + env(safe-area-inset-top, 0px));
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
 
   h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; margin: 0; }
   p { margin: 0; }
+  a { color: var(--accent); }
 
   .eyebrow {
-    font-family: var(--font-body);
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
     color: var(--accent-2);
-    text-transform: uppercase;
     margin-bottom: 10px;
   }
-  header.masthead h1 { font-size: clamp(1.7rem, 4.5vw, 2.5rem); color: var(--fg); margin-bottom: 14px; }
-  header.masthead .lede { font-size: 1.05rem; color: var(--fg-muted); max-width: 640px; }
   header.masthead { padding-bottom: 28px; border-bottom: 1px solid var(--border); margin-bottom: 36px; }
-  .skip-link {
+  /* מפנה מקום לכפתור החלפת התצוגה, שנמצא בצד שמאל למעלה */
+  @media (max-width: 640px) { header.masthead { padding-inline-end: 52px; } }
+  header.masthead h1 { font-size: clamp(1.7rem, 4.5vw, 2.5rem); margin-bottom: 14px; }
+  header.masthead .lede { font-size: 1.05rem; color: var(--fg-muted); max-width: 640px; }
+  .disclosure-link {
     display: inline-block;
     margin-top: 16px;
     font-size: 0.88rem;
-    color: var(--accent);
-    text-decoration: underline;
     text-decoration-color: var(--border);
   }
 
   h2.section-title { font-size: 1.4rem; margin-bottom: 16px; }
 
+  /* בקצרה */
+  .quick { margin-bottom: 44px; }
+  .quick ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 560px) { .quick ul { grid-template-columns: 1fr; } }
+  .quick li {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 0.94rem;
+  }
+  .quick .who { display: block; color: var(--fg-muted); font-size: 0.86rem; margin-bottom: 2px; }
+  .quick a { font-weight: 700; text-decoration: none; }
+  .quick a:hover { text-decoration: underline; }
+
+  /* טבלה */
   .compare { margin-bottom: 44px; }
   .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
-  table { border-collapse: collapse; width: 100%; min-width: 680px; font-size: 0.92rem; }
+  table { border-collapse: separate; border-spacing: 0; width: 100%; min-width: 860px; font-size: 0.9rem; }
   thead th {
     background: var(--surface-2);
-    font-family: var(--font-body);
     font-weight: 600;
     text-align: right;
     padding: 12px 14px;
     border-bottom: 1px solid var(--border);
-    white-space: nowrap;
     color: var(--fg-muted);
     font-size: 0.82rem;
+    vertical-align: bottom;
   }
-  tbody td { padding: 14px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tbody td { padding: 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
   tbody tr:last-child td { border-bottom: none; }
-  tbody td:first-child { font-weight: 700; color: var(--accent); white-space: nowrap; }
+  /* עמודת שם הפלטפורמה נשארת קבועה בזמן גלילה לרוחב */
+  thead th:first-child, tbody th {
+    position: sticky;
+    right: 0;
+    z-index: 1;
+    border-left: 1px solid var(--border);
+  }
+  tbody th {
+    background: var(--surface);
+    font-weight: 700;
+    color: var(--accent);
+    white-space: nowrap;
+    text-align: right;
+    padding: 14px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+  }
+  tbody tr:last-child th { border-bottom: none; }
+  tbody th a { color: inherit; text-decoration: none; }
+  tbody th a:hover { text-decoration: underline; }
+  .na { color: var(--fg-muted); }
   .table-note { margin-top: 10px; font-size: 0.82rem; color: var(--fg-muted); }
+  .table-note + .table-note { margin-top: 6px; }
 
+  /* כרטיסים */
   .platforms { display: flex; flex-direction: column; gap: 22px; margin-bottom: 44px; }
   .card {
     background: var(--surface);
@@ -123,6 +192,7 @@
     border-radius: 16px;
     padding: 28px;
   }
+  @media (max-width: 480px) { .card { padding: 20px; } }
   .card-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin-bottom: 10px; }
   .card-head h3 { font-size: 1.35rem; }
   .tag {
@@ -137,29 +207,29 @@
 
   .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 22px; }
   @media (max-width: 560px) { .pros-cons { grid-template-columns: 1fr; } }
-  .pros-cons h4 { font-family: var(--font-body); font-size: 0.82rem; letter-spacing: 0.03em; text-transform: uppercase; margin-bottom: 10px; }
+  .pros-cons h4 { font-family: var(--font-body); font-size: 0.88rem; margin-bottom: 10px; }
   .pros h4 { color: var(--good); }
   .cons h4 { color: var(--bad); }
   .pros-cons ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
   .pros-cons li { display: flex; gap: 8px; align-items: flex-start; font-size: 0.94rem; }
-  .pros-cons li .mark { flex-shrink: 0; font-weight: 700; margin-top: 2px; }
+  .pros-cons li .mark { flex-shrink: 0; font-weight: 700; }
   .pros li .mark { color: var(--good); }
   .cons li .mark { color: var(--bad); }
 
-  .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; padding-top: 18px; border-top: 1px dashed var(--border); }
+  .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding-top: 18px; border-top: 1px dashed var(--border); }
   .cta {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--accent-2);
-    color: #FFFFFF;
+    background: var(--cta-bg);
+    color: var(--cta-fg);
     font-weight: 600;
     font-size: 0.95rem;
     padding: 11px 22px;
     border-radius: 999px;
     text-decoration: none;
-    border: 1px dashed rgba(255,255,255,0.55);
   }
+  .cta:hover { filter: brightness(1.08); }
   .cta:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .cta-note { font-size: 0.8rem; color: var(--fg-muted); }
 
@@ -176,12 +246,10 @@
 
   .foot { color: var(--fg-muted); font-size: 0.82rem; text-align: center; }
 
-  a { color: var(--accent); }
-
   .theme-toggle {
     position: fixed;
     top: calc(16px + env(safe-area-inset-top, 0px));
-    left: calc(16px + env(safe-area-inset-left, 0px));
+    left: max(16px, env(safe-area-inset-left, 0px));
     z-index: 20;
     width: 40px;
     height: 40px;
@@ -197,121 +265,110 @@
   }
   .theme-toggle:hover { border-color: var(--accent); }
   .theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .theme-toggle svg { width: 18px; height: 18px; display: none; }
+  .theme-toggle svg { width: 18px; height: 18px; }
+  .theme-toggle .icon-moon { display: none; }
 </style>
+</head>
+<body>
+
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="החלפת מצב תצוגה">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
 
 <div class="page">
 
-  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="החלפת מצב תצוגה">
-    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <circle cx="12" cy="12" r="5"></circle>
-      <line x1="12" y1="1" x2="12" y2="3"></line>
-      <line x1="12" y1="21" x2="12" y2="23"></line>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-      <line x1="1" y1="12" x2="3" y2="12"></line>
-      <line x1="21" y1="12" x2="23" y2="12"></line>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-    </svg>
-    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-    </svg>
-  </button>
-  <script>
-    (function () {
-      function getStored() { try { return localStorage.getItem('theme'); } catch (e) { return null; } }
-      function setStored(v) { try { localStorage.setItem('theme', v); } catch (e) {} }
-      function systemDark() { return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; }
-      function effective(v) { return (v === 'dark' || v === 'light') ? v : (systemDark() ? 'dark' : 'light'); }
-      var btn = document.getElementById('theme-toggle');
-      function paint(v) {
-        var eff = effective(v);
-        if (v === 'dark' || v === 'light') { document.documentElement.setAttribute('data-theme', v); }
-        else { document.documentElement.removeAttribute('data-theme'); }
-        if (btn) {
-          btn.setAttribute('aria-pressed', eff === 'dark' ? 'true' : 'false');
-          btn.setAttribute('aria-label', eff === 'dark' ? 'מעבר למצב בהיר' : 'מעבר למצב כהה');
-          var sun = btn.querySelector('.icon-sun');
-          var moon = btn.querySelector('.icon-moon');
-          if (sun) sun.style.display = eff === 'dark' ? 'none' : 'block';
-          if (moon) moon.style.display = eff === 'dark' ? 'block' : 'none';
-        }
-      }
-      var stored = getStored();
-      paint(stored);
-      if (btn) {
-        btn.addEventListener('click', function () {
-          var next = effective(getStored()) === 'dark' ? 'light' : 'dark';
-          setStored(next);
-          paint(next);
-        });
-      }
-    })();
-  </script>
-
   <header class="masthead" id="top">
-    <div class="eyebrow">מדריך למשקיע העצמאי · עודכן אוקטובר 2026</div>
+    <!-- תאריך העדכון מופיע רק כאן; שאר העמוד מפנה אליו -->
+    <div class="eyebrow">מדריך למשקיע העצמאי · עודכן <time datetime="2026-10">אוקטובר 2026</time></div>
     <h1>איזו פלטפורמת מסחר עצמאי מתאימה לך?</h1>
     <p class="lede">
-      השוואה בין ארבע פלטפורמות למסחר עצמאי בשוק ההון הנפוצות בישראל — מיטב טרייד, אקסלנס טרייד,
-      אינטראקטיב ישראל ובלינק. לכל פלטפורמה יש מבנה עמלות וקהל מתאים שונה, ולכן שווה להסתכל גם על
-      המספרים וגם על מי שהפלטפורמה בנויה בשבילו, לפני שבוחרים איפה לפתוח חשבון.
+      השוואה בין ארבע פלטפורמות נפוצות בישראל למסחר עצמאי בשוק ההון: מיטב טרייד, אקסלנס טרייד,
+      אינטראקטיב ישראל ובלינק. לכל אחת מבנה עמלות שונה וקהל שהיא מתאימה לו, ולכן כדאי לבדוק גם את
+      המספרים וגם למי הפלטפורמה בנויה לפני שפותחים חשבון.
     </p>
-    <a class="skip-link" href="#disclosure">גילוי נאות וקישורי שותפים ←</a>
+    <a class="disclosure-link" href="#disclosure">גילוי נאות וקישורי שותפים ←</a>
   </header>
+
+  <section class="quick" aria-labelledby="quick-title">
+    <h2 class="section-title" id="quick-title">בקצרה: מה מתאים למי</h2>
+    <ul>
+      <li><span class="who">משקיע בעיקר בבורסה בתל אביב, ומחזיק כסף בקרנות כספיות</span><a href="#meitav">מיטב טרייד</a></li>
+      <li><span class="who">משקיע בתל אביב, או לקוח של הפניקס שרוצה לרכז הכול במקום אחד</span><a href="#excellence">אקסלנס טרייד</a></li>
+      <li><span class="who">סוחר מנוסה בחו"ל שמחפש עמלות נמוכות ומגוון מוצרים רחב</span><a href="#interactive">אינטראקטיב ישראל</a></li>
+      <li><span class="who">מתחיל עם סכום קטן שרוצה מניות ותעודות סל אמריקאיות בפשטות</span><a href="#blink">בלינק</a></li>
+    </ul>
+  </section>
 
   <section class="compare" aria-labelledby="compare-title">
     <h2 class="section-title" id="compare-title">השוואה מהירה</h2>
-    <div class="table-wrap">
+    <div class="table-wrap" role="region" aria-labelledby="compare-title" tabindex="0">
       <table>
         <thead>
           <tr>
             <th scope="col">פלטפורמה</th>
             <th scope="col">מינימום הפקדה</th>
-            <th scope="col">עמלת מינימום בארץ</th>
-            <th scope="col">עמלת מינימום בחו"ל</th>
+            <th scope="col">עמלה בת"א (מינימום לפעולה)</th>
+            <th scope="col">עמלה בחו"ל (לפעולה)</th>
             <th scope="col">דמי טיפול חודשיים</th>
+            <th scope="col">המרת מט"ח ודמי משמרת</th>
             <th scope="col">מתאימה בעיקר ל-</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>מיטב טרייד</td>
+            <th scope="row"><a href="#meitav">מיטב טרייד</a></th>
             <td>5,000 ₪</td>
             <td>4.65 ₪</td>
-            <td>5$</td>
-            <td>15 ₪, מקוזז מול עמלות מסחר (עד 180 ₪ בשנה)</td>
-            <td>השקעה בניירות ערך ישראליים וקרנות כספיות ללא עמלת קנייה/מכירה</td>
+            <td>מינימום 5.00$</td>
+            <td>15 ₪, מתקזזים מול עמלות המסחר. בהטבת ההצטרפות: שנתיים פטור</td>
+            <td>ללא דמי משמרת. לפי החברה אין עמלת חליפין, אך יש מרווח בשער ההמרה</td>
+            <td>ניירות ערך ישראליים, וקרנות כספיות ללא עמלת קנייה/מכירה</td>
           </tr>
           <tr>
-            <td>אקסלנס טרייד</td>
-            <td>10,000 ₪ (רשמי), מ-4,500 ₪ בקישור ההטבה</td>
-            <td>3 ₪</td>
-            <td>6$</td>
-            <td>15 ₪ — בהטבת הצטרפות נוכחית (לזמן מוגבל): פטור לכל החיים</td>
-            <td>ניירות ערך ישראליים, ולקוחות הפניקס שרוצים לרכז השקעות וחיסכון במקום אחד</td>
+            <th scope="row"><a href="#excellence">אקסלנס טרייד</a></th>
+            <td>10,000 ₪ (רשמי), 4,500 ₪ בקישור ההטבה</td>
+            <td>3.00 ₪</td>
+            <td>מינימום 6.00$</td>
+            <td>15 ₪, מתקזזים מול עמלות המסחר. בהטבת ההצטרפות: פטור לכל החיים*</td>
+            <td>ללא דמי משמרת. מרווח המרה של כ-2 אגורות לדולר, לפי אתרי השוואה</td>
+            <td>ניירות ערך ישראליים, ולקוחות הפניקס שרוצים לרכז השקעות וחיסכון</td>
           </tr>
           <tr>
-            <td>אינטראקטיב ישראל</td>
+            <th scope="row"><a href="#interactive">אינטראקטיב ישראל</a></th>
             <td>אין מינימום רשמי</td>
-            <td>לא קיים — אין מסחר בבורסה בת"א</td>
-            <td>2.50$ לעסקה (מינימום; החישוב הבסיסי הוא 1 סנט למניה)</td>
+            <td class="na">אין מסחר בת"א</td>
+            <td>1 סנט למניה, מינימום 2.50$</td>
             <td>אין</td>
+            <td>ללא דמי משמרת. המרה לפי תעריף Interactive Brokers; כדאי לבדוק אם המתווך מוסיף עמלה</td>
             <td>סוחר מנוסה שרוצה מגוון עולמי ועמלות נמוכות</td>
           </tr>
           <tr>
-            <td>בלינק</td>
+            <th scope="row"><a href="#blink">בלינק</a></th>
             <td>אין מינימום</td>
-            <td>— (אין מסחר בת"א)</td>
-            <td>ללא עמלה עד 10 פעולות בחודש</td>
+            <td class="na">אין מסחר בת"א</td>
+            <td>10 פעולות בחודש ללא עמלה, אחר כך 1 סנט למניה, מינימום 1.50$</td>
             <td>אין</td>
+            <td>ללא דמי משמרת. מרווח בשער ההמרה, שאינו מפורסם באופן אחיד</td>
             <td>מתחילים וסכומי פתיחה קטנים</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p class="table-note">דמי הטיפול החודשיים במיטב טרייד ובאקסלנס טרייד מתקזזים מול עמלות המסחר שבוצעו באותו חודש — משלמים אותם בפועל רק אם סכום העמלות החודשי נמוך מהם. הנתונים מבוססים על פרסומי החברות ואתרי השוואה פיננסיים ועשויים להשתנות — מומלץ לאמת מול כל גוף לפני פתיחת חשבון.</p>
+    <p class="table-note">דמי הטיפול החודשיים במיטב טרייד ובאקסלנס טרייד מתקזזים מול עמלות המסחר של אותו חודש: משלמים אותם בפועל רק אם סך העמלות החודשי נמוך מהם.</p>
+    <p class="table-note">* הטבות ההצטרפות מוגבלות בזמן ונכונות למועד העדכון שבראש העמוד. הנתונים מבוססים על פרסומי החברות ועל אתרי השוואה פיננסיים, ובמקורות שונים מופיעים לעיתים נתונים שונים. מומלץ לאמת מול כל גוף לפני פתיחת חשבון.</p>
   </section>
 
   <section class="platforms" aria-label="פירוט הפלטפורמות">
@@ -319,36 +376,36 @@
     <article class="card" id="meitav">
       <div class="card-head">
         <h3>מיטב טרייד</h3>
-        <span class="tag">בית ההשקעות מיטב דש</span>
+        <span class="tag">בית ההשקעות מיטב</span>
       </div>
       <p class="desc">
-        פלטפורמת המסחר העצמאי של מיטב דש — חבר הבורסה החוץ-בנקאי הגדול בישראל. ממשק נוח וידידותי,
-        ומתאימה בעיקר למי שמעוניין להשקיע בניירות ערך ישראליים, וכן למי שמחזיק כסף פנוי בקרנות
-        כספיות בין השקעה להשקעה בלי לשלם עמלת קנייה או מכירה.
+        פלטפורמת המסחר העצמאי של מיטב, מהמובילות בקרב חברי הבורסה החוץ-בנקאיים ללקוחות עצמאיים בישראל.
+        הממשק נוח וידידותי, והיא מתאימה בעיקר למי שמשקיע בניירות ערך ישראליים ולמי שמחזיק כסף פנוי
+        בקרנות כספיות בין השקעה להשקעה, בלי לשלם עמלת קנייה או מכירה.
       </p>
       <div class="pros-cons">
         <div class="pros">
           <h4>יתרונות</h4>
           <ul>
-            <li><span class="mark">✓</span><span>חבר הבורסה החוץ-בנקאי הגדול בישראל, עם היסטוריה ותפעול יציב.</span></li>
-            <li><span class="mark">✓</span><span>עמלת מינימום נמוכה יחסית למסחר בחו"ל (5$ לפעולה).</span></li>
-            <li><span class="mark">✓</span><span>אין עמלות קנייה ומכירה על קרנות כספיות, כך שכסף שמחכה להשקעה לא "יושב" ללא תשואה.</span></li>
-            <li><span class="mark">✓</span><span>הטבת הצטרפות: 100 ₪ מתנה ושנתיים פטור מדמי טיפול.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>חבר בורסה חוץ-בנקאי ותיק וגדול, בפיקוח הבורסה ורשות ניירות ערך.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>עמלת מינימום נמוכה יחסית למסחר בחו"ל (5.00$ לפעולה).</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>אין עמלות קנייה ומכירה על קרנות כספיות, כך שכסף שמחכה להשקעה לא עומד בלי תשואה.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>הטבת הצטרפות: 100 ₪ מתנה ושנתיים פטור מדמי טיפול.</span></li>
           </ul>
         </div>
         <div class="cons">
           <h4>חסרונות</h4>
           <ul>
-            <li><span class="mark">✕</span><span>עמלת המינימום למסחר בארץ (4.65 ₪) גבוהה יחסית לחלק מהמתחרים.</span></li>
-            <li><span class="mark">✕</span><span>דמי טיפול חודשיים (15 ₪) מתקזזים מול עמלות המסחר באותו חודש — משלמים אותם בפועל רק אם העמלות החודשיות נמוכות מ-15 ₪.</span></li>
-            <li><span class="mark">✕</span><span>עמלת המרת מט"ח לא תמיד מפורטת בפרסום — כדאי לשאול עליה מראש.</span></li>
-            <li><span class="mark">✕</span><span>פחות משתלמת למי שמפקיד סכומים קטנים או סוחר לעיתים רחוקות.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>עמלת המינימום למסחר בארץ (4.65 ₪) גבוהה יחסית לחלק מהמתחרים.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>אחרי תקופת ההטבה יש דמי טיפול של 15 ₪ לחודש, שמתקזזים מול עמלות המסחר. משלמים אותם בפועל רק אם העמלות החודשיות נמוכות מ-15 ₪.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>לפי החברה אין עמלת חליפין, אבל ההמרה מתבצעת עם מרווח בשער. כדאי לבדוק את השער בפועל לפני המרה גדולה.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>פחות משתלמת למי שמפקיד סכומים קטנים או סוחר לעיתים רחוקות.</span></li>
           </ul>
         </div>
       </div>
       <div class="cta-row">
-        <!-- AFFILIATE-LINK: meitav-trade (filled) -->
-        <a class="cta" href="https://landing.meitav.co.il/he-IL/landing/trade/tradeleadsfreinds?utm_medium=9CF10CCB986FAE06D95F8DFCB8597C1B" data-platform="meitav-trade" target="_blank" rel="noopener">פתיחת חשבון במיטב טרייד</a>
+        <a class="cta" href="https://landing.meitav.co.il/he-IL/landing/trade/tradeleadsfreinds?utm_medium=9CF10CCB986FAE06D95F8DFCB8597C1B" data-platform="meitav-trade" target="_blank" rel="sponsored noopener">פתיחת חשבון במיטב טרייד</a>
+        <span class="cta-note">קישור שותפים · ההטבה נכונה למועד העדכון</span>
       </div>
     </article>
 
@@ -358,30 +415,33 @@
         <span class="tag">קבוצת הפניקס</span>
       </div>
       <p class="desc">
-        פלטפורמת המסחר העצמאי של אקסלנס (קבוצת הפניקס), עם מערכת המסחר Extrade Pro. מתאימה
-        בעיקר למי שסוחר בניירות ערך ישראליים, ולמי שיש לו כבר מוצרי חיסכון או פנסיה בקבוצת
-        הפניקס ומעוניין לרכז את הפעילות הפיננסית מול גוף אחד.
+        פלטפורמת המסחר העצמאי של אקסלנס (קבוצת הפניקס), עם מערכת המסחר Extrade Pro. מתאימה בעיקר
+        למי שסוחר בניירות ערך ישראליים, ולמי שכבר מחזיק מוצרי חיסכון או פנסיה בקבוצת הפניקס ורוצה
+        לרכז את הפעילות הפיננסית מול גוף אחד.
       </p>
       <div class="pros-cons">
         <div class="pros">
           <h4>יתרונות</h4>
           <ul>
-            <li><span class="mark">✓</span><span>הטבת הצטרפות נוכחית לזמן מוגבל: פתיחת חשבון מזכה בפטור מדמי הטיפול לכל החיים, ולא רק לכמה שנים.</span></li>
-            <li><span class="mark">✓</span><span>עמלת מינימום למסחר בארץ נמוכה מזו של מיטב טרייד (3 ₪ לעומת 4.65 ₪ לפעולה).</span></li>
-            <li><span class="mark">✓</span><span>מערכת מסחר מתקדמת (Extrade Pro) עם כלים לסוחר פעיל.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>הטבת הצטרפות (לזמן מוגבל, נכונה למועד העדכון): פטור מדמי הטיפול לכל החיים, ולא רק לכמה שנים.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>עמלת המינימום למסחר בארץ הנמוכה בהשוואה: 3.00 ₪ לפעולה, לעומת 4.65 ₪ במיטב טרייד.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>מערכת מסחר מתקדמת (Extrade Pro) עם כלים לסוחר פעיל.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>מינימום הפקדה מופחת (4,500 ₪) בהצטרפות דרך קישור ההטבה.</span></li>
           </ul>
         </div>
         <div class="cons">
           <h4>חסרונות</h4>
           <ul>
-            <li><span class="mark">✕</span><span>אם ההטבה לא חלה, דמי הטיפול (15 ₪ לחודש) מתקזזים מול עמלות המסחר באותו חודש — משלמים אותם בפועל רק אם העמלות החודשיות נמוכות מ-15 ₪.</span></li>
-            <li><span class="mark">✕</span><span>קנייה ומכירה של קרנות כספיות עולה 16 ₪ לפעולה — בניגוד למיטב טרייד, שבה פעולות אלו פטורות מעמלה.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>עמלת המינימום בחו"ל (6.00$ לפעולה) היא הגבוהה מבין ארבע הפלטפורמות בהשוואה.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>מינימום ההפקדה הרשמי (10,000 ₪) הוא הגבוה בהשוואה.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>בלי ההטבה, דמי הטיפול הם 15 ₪ לחודש ומתקזזים מול עמלות המסחר. משלמים אותם בפועל רק אם העמלות החודשיות נמוכות מ-15 ₪.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>קנייה ומכירה של קרנות כספיות עולות 16 ₪ לפעולה, בניגוד למיטב טרייד, שבה הן פטורות מעמלה.</span></li>
           </ul>
         </div>
       </div>
       <div class="cta-row">
-        <!-- AFFILIATE-LINK: excellence-trade (filled) -->
-        <a class="cta" href="https://xnestrade.xnes.co.il/page/101?customerCode=2d650ea6" data-platform="excellence-trade" target="_blank" rel="noopener">פתיחת חשבון באקסלנס טרייד</a>
+        <a class="cta" href="https://xnestrade.xnes.co.il/page/101?customerCode=2d650ea6" data-platform="excellence-trade" target="_blank" rel="sponsored noopener">פתיחת חשבון באקסלנס טרייד</a>
+        <span class="cta-note">קישור שותפים · ההטבה נכונה למועד העדכון</span>
       </div>
     </article>
 
@@ -391,69 +451,68 @@
         <span class="tag">מתווכת (Introducing Broker) של Interactive Brokers · MEXEM LTD</span>
       </div>
       <p class="desc">
-        שירות המתווך בישראל גישה למערכות ולעמלות של אינטראקטיב ברוקרס העולמית. פועלת בישראל
-        בפטור לפי סעיף 49א לחוק ניירות ערך, ולא בפיקוח ישיר של רשות ניירות ערך הישראלית — מתאימה
-        בעיקר לסוחר שמחפש עמלות נמוכות ומגוון מוצרים גלובלי בבורסות זרות — אין בה מסחר בבורסה בתל אביב.
+        שירות תיווך שמעניק למשקיעים בישראל גישה למערכות ולעמלות של Interactive Brokers העולמית.
+        החברה פועלת בישראל בפטור לפי סעיף 49א לחוק ניירות ערך, ולא בפיקוח ישיר של רשות ניירות ערך.
+        היא מתאימה בעיקר לסוחר שמחפש עמלות נמוכות ומגוון מוצרים גלובלי. אין בה מסחר בבורסה בתל אביב.
       </p>
       <div class="pros-cons">
         <div class="pros">
           <h4>יתרונות</h4>
           <ul>
-            <li><span class="mark">✓</span><span>עמלות נמוכות מאוד בחו"ל: כ-1 סנט למניה עם רצפת מינימום של 2.5$ לעסקה, בלי דמי ניהול או אחזקה.</span></li>
-            <li><span class="mark">✓</span><span>מגוון עצום של מוצרים — מניות, תעודות סל, אופציות, אג"ח וחוזים עתידיים.</span></li>
-            <li><span class="mark">✓</span><span>גישה ישירה למסחר בבורסות מובילות בעולם, כולל שעות מסחר מורחבות.</span></li>
-            <li><span class="mark">✓</span><span>ביטוח חשבון עד 500,000$ דרך SIPC, ושירות לקוחות בעברית.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>עמלות נמוכות מאוד בחו"ל: כ-1 סנט למניה עם מינימום של 2.50$ לעסקה, בלי דמי ניהול או משמרת.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>מגוון עצום של מוצרים: מניות, תעודות סל, אופציות, אג"ח וחוזים עתידיים.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>גישה ישירה למסחר בבורסות מובילות בעולם, כולל שעות מסחר מורחבות.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>כיסוי SIPC עד 500,000$ (מתוכם עד 250,000$ במזומן), בכפוף לישות שבה מתנהל החשבון, ושירות לקוחות בעברית.</span></li>
           </ul>
         </div>
         <div class="cons">
           <h4>חסרונות</h4>
           <ul>
-            <li><span class="mark">✕</span><span>אין מסחר בבורסה בתל אביב — רק בבורסות זרות, בעיקר בארה"ב.</span></li>
-            <li><span class="mark">✕</span><span>לא מפוקחת ישירות על ידי רשות ניירות ערך בישראל — פועלת במתווה פטור.</span></li>
-            <li><span class="mark">✕</span><span>עומק המוצרים והכלים דורש עקומת למידה — פחות מתאימה למי שמתחיל מאפס.</span></li>
-            <li><span class="mark">✕</span><span>אפשר להפקיד רק מחשבון בנק על שם בעל החשבון עצמו.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>אין מסחר בבורסה בתל אביב ללקוחות פרטיים, רק בבורסות זרות.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>לא מפוקחת ישירות על ידי רשות ניירות ערך בישראל, אלא פועלת במתווה פטור.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>עומק המוצרים והכלים דורש עקומת למידה, ולכן היא פחות מתאימה למי שמתחיל מאפס.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>אפשר להפקיד רק מחשבון בנק על שם בעל החשבון עצמו.</span></li>
           </ul>
         </div>
       </div>
       <div class="cta-row">
-        <!-- AFFILIATE-LINK: interactive-israel (filled) -->
-        <a class="cta" href="https://www.inter-il.com/friends-registration/?friend_token=d2d9531700" data-platform="interactive-israel" target="_blank" rel="noopener">פתיחת חשבון באינטראקטיב ישראל</a>
+        <a class="cta" href="https://www.inter-il.com/friends-registration/?friend_token=d2d9531700" data-platform="interactive-israel" target="_blank" rel="sponsored noopener">פתיחת חשבון באינטראקטיב ישראל</a>
+        <span class="cta-note">קישור שותפים</span>
       </div>
     </article>
 
     <article class="card" id="blink">
       <div class="card-head">
         <h3>בלינק</h3>
-        <span class="tag">חברת בורסה מפוקחת (רשות ניירות ערך + הבורסה)</span>
+        <span class="tag">חברת בורסה בתל אביב (מ-2023)</span>
       </div>
       <p class="desc">
-        אפליקציית מסחר ישראלית חדשה יחסית, המיועדת למי שרוצה להתחיל להשקיע בסכומים קטנים
-        ובפשטות. כספי הלקוחות מופקדים בנאמנות בבנקים בישראל או באינטראקטיב ברוקרס, ולא נשארים
-        אצל בלינק עצמה.
+        אפליקציית מסחר ישראלית חדשה יחסית, למי שרוצה להתחיל להשקיע בסכומים קטנים ובפשטות. לפי החברה,
+        כספי הלקוחות מוחזקים בנאמנות בבנקים בישראל או ב-Interactive Brokers, ולא אצל בלינק עצמה.
       </p>
       <div class="pros-cons">
         <div class="pros">
           <h4>יתרונות</h4>
           <ul>
-            <li><span class="mark">✓</span><span>אין מינימום הפקדה — אפשר להתחיל להשקיע מכ-1$.</span></li>
-            <li><span class="mark">✓</span><span>מסחר במניות שבר (fractional), כך שאפשר לפזר גם סכום קטן על כמה מניות.</span></li>
-            <li><span class="mark">✓</span><span>עד 10 פעולות בחודש בלי עמלה, ובלי דמי ניהול או אחזקה.</span></li>
-            <li><span class="mark">✓</span><span>פתיחת חשבון מהירה, הפקדה בכרטיס אשראי, ועיצוב פשוט וידידותי למתחילים.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>אין מינימום הפקדה: אפשר להתחיל להשקיע מכ-1$.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>מסחר בשברי מניות (fractional), כך שאפשר לפזר גם סכום קטן על כמה מניות.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>10 פעולות בחודש בלי עמלה (אחר כך 1 סנט למניה, מינימום 1.50$), ובלי דמי ניהול או משמרת.</span></li>
+            <li><span class="mark" aria-hidden="true">✓</span><span>פתיחת חשבון מהירה, הפקדה בכרטיס אשראי, ועיצוב פשוט וידידותי למתחילים.</span></li>
           </ul>
         </div>
         <div class="cons">
           <h4>חסרונות</h4>
           <ul>
-            <li><span class="mark">✕</span><span>מסחר במניות ותעודות סל אמריקאיות בלבד — אין מסחר בבורסה הישראלית.</span></li>
-            <li><span class="mark">✕</span><span>ניתן להעביר ניירות ערך לברוקר אחר, אך בעמלה של 0.1% משווי הניירות עם מינימום של 8$ — מומלץ לבדוק תעריף עדכני מול בלינק לפני ההעברה.</span></li>
-            <li><span class="mark">✕</span><span>עמלת המרת מט"ח בין שקל לדולר, והמשתמש אינו שולט בשער הביצוע בפועל בהמרה — כדאי לבדוק את התנאים מראש.</span></li>
-            <li><span class="mark">✕</span><span>חברה חדשה בשוק, עם פחות שנות פעילות מוכחת לעומת המתחרות.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>מסחר במניות ובתעודות סל אמריקאיות בלבד, ללא מסחר בבורסה הישראלית.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>העברת ניירות ערך לברוקר אחר כרוכה בעמלה של 0.1% משווי הניירות, עם מינימום של 8$. מומלץ לבדוק את התעריף העדכני מול בלינק לפני ההעברה.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>בהמרה בין שקל לדולר יש מרווח בשער, והמשתמש לא שולט בשער הביצוע. כדאי לבדוק את התנאים מראש.</span></li>
+            <li><span class="mark" aria-hidden="true">✕</span><span>חברה חדשה בשוק, עם פחות שנות פעילות מוכחת לעומת המתחרות.</span></li>
           </ul>
         </div>
       </div>
       <div class="cta-row">
-        <!-- AFFILIATE-LINK: blink (filled) -->
-        <a class="cta" href="https://friends.heyblink.com/Ufyv/rx07xhda?af_sub1=MD0F5HuQFpgc&amp;deep_link_sub1=MD0F5HuQFpgc" data-platform="blink" target="_blank" rel="noopener">פתיחת חשבון בבלינק</a>
+        <a class="cta" href="https://friends.heyblink.com/Ufyv/rx07xhda?af_sub1=MD0F5HuQFpgc&amp;deep_link_sub1=MD0F5HuQFpgc" data-platform="blink" target="_blank" rel="sponsored noopener">פתיחת חשבון בבלינק</a>
+        <span class="cta-note">קישור שותפים</span>
       </div>
     </article>
 
@@ -462,17 +521,18 @@
   <section class="disclosure" id="disclosure">
     <h2>גילוי נאות</h2>
     <p>
-      התוכן בעמוד זה נועד למטרות מידע כללי בלבד ואינו מהווה ייעוץ השקעות, שיווק השקעות או הצעה
-      לרכישת נייר ערך כלשהו. אין בו תחליף לייעוץ המתחשב בנתונים ובצרכים האישיים של כל אדם, ואין
+      התוכן בעמוד זה נועד למטרות מידע כללי בלבד, ואינו מהווה ייעוץ השקעות, שיווק השקעות או הצעה
+      לרכישת נייר ערך כלשהו. הוא אינו תחליף לייעוץ שמתחשב בנתונים ובצרכים האישיים של כל אדם, ואין
       להסתמך עליו כהמלצה לפתיחת חשבון בגוף מסוים.
     </p>
     <p>
-      העמלות, הסכומים וההטבות המוצגים נכונים למועד עדכון העמוד (אוקטובר 2026) ועשויים להשתנות
-      ללא הודעה מוקדמת — מומלץ לאמת את כל הפרטים ישירות מול הגוף הפיננסי לפני פתיחת חשבון.
+      העמלות, הסכומים וההטבות המוצגים נכונים למועד העדכון שמופיע בראש העמוד, ועשויים להשתנות ללא
+      הודעה מוקדמת. מומלץ לאמת את כל הפרטים ישירות מול הגוף הפיננסי לפני פתיחת חשבון.
     </p>
     <p>
-      חלק מהקישורים בעמוד הם קישורי שותפים (אפיליאייט). במקרה של הצטרפות באמצעותם, ייתכן שתשולם
-      לנו עמלת הפניה מהגוף הפיננסי — מבלי שהדבר משפיע על העמלות, ההטבות או התנאים שיוצעו לך.
+      הקישורים לפתיחת חשבון בעמוד הם קישורי שותפים (אפיליאייט). אם תצטרף דרכם, ייתכן שנקבל עמלת הפניה
+      מהגוף הפיננסי, ללא עלות נוספת עבורך. בחלק מהמקרים ההצטרפות דרך הקישור אף מקנה הטבה שאינה זמינה
+      בהצטרפות ישירה.
     </p>
   </section>
 
@@ -483,9 +543,32 @@
 </div>
 
 <script>
-  document.querySelectorAll('a.cta[href="#"]').forEach(function (a) {
-    a.addEventListener('click', function (e) { e.preventDefault(); });
-  });
+  (function () {
+    function getStored() { try { return localStorage.getItem('theme'); } catch (e) { return null; } }
+    function setStored(v) { try { localStorage.setItem('theme', v); } catch (e) {} }
+    function systemDark() { return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; }
+    function effective(v) { return (v === 'dark' || v === 'light') ? v : (systemDark() ? 'dark' : 'light'); }
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    var sun = btn.querySelector('.icon-sun');
+    var moon = btn.querySelector('.icon-moon');
+    function paint(v) {
+      var eff = effective(v);
+      if (v === 'dark' || v === 'light') { document.documentElement.setAttribute('data-theme', v); }
+      else { document.documentElement.removeAttribute('data-theme'); }
+      btn.setAttribute('aria-pressed', eff === 'dark' ? 'true' : 'false');
+      btn.setAttribute('aria-label', eff === 'dark' ? 'מעבר למצב בהיר' : 'מעבר למצב כהה');
+      sun.style.display = eff === 'dark' ? 'none' : 'block';
+      moon.style.display = eff === 'dark' ? 'block' : 'none';
+    }
+    paint(getStored());
+    btn.addEventListener('click', function () {
+      var next = effective(getStored()) === 'dark' ? 'light' : 'dark';
+      setStored(next);
+      paint(next);
+    });
+  })();
 </script>
 
-</body></html>
+</body>
+</html>
