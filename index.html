@@ -9,10 +9,16 @@
 <meta property="og:locale" content="he_IL">
 <meta property="og:title" content="איזו פלטפורמת מסחר עצמאי מתאימה לך?">
 <meta property="og:description" content="השוואת עמלות, דמי טיפול, יתרונות וחסרונות של מיטב טרייד, אקסלנס טרייד, אינטראקטיב ישראל ובלינק.">
+<meta property="og:image" content="https://guyqi.github.io/ISRAEL_INVEST/assets/logo-site.png">
+<meta property="og:image:width" content="256">
+<meta property="og:image:height" content="248">
+<meta property="og:image:alt" content="סמל המדריך: שור וחץ מצפן">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://guyqi.github.io/ISRAEL_INVEST/assets/logo-site.png">
 <meta name="theme-color" content="#F1EEE7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#141A22" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231F3A5F'/%3E%3Cpath d='M7 22l6-6 4 4 8-9' fill='none' stroke='%23E0A463' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Noto+Sans+Hebrew:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -44,6 +50,8 @@
     --border: #DDD6C8;
     --font-display: 'Frank Ruhl Libre', Georgia, 'Times New Roman', serif;
     --font-body: 'Noto Sans Hebrew', Arial, sans-serif;
+    --logo-plate: transparent;
+    --logo-pad: 0px;
     color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
@@ -62,6 +70,8 @@
       --good: #63B183;
       --bad: #DD7A73;
       --border: #2B333F;
+      --logo-plate: #F1EEE7;
+      --logo-pad: 7px;
       color-scheme: dark;
     }
   }
@@ -80,6 +90,8 @@
     --good: #63B183;
     --bad: #DD7A73;
     --border: #2B333F;
+    --logo-plate: #F1EEE7;
+    --logo-pad: 7px;
     color-scheme: dark;
   }
 
@@ -119,6 +131,20 @@
   /* מפנה מקום לכפתור החלפת התצוגה, שנמצא בצד שמאל למעלה */
   @media (max-width: 640px) { header.masthead { padding-inline-end: 52px; } }
   header.masthead h1 { font-size: clamp(1.7rem, 4.5vw, 2.5rem); margin-bottom: 14px; }
+  .brand-link { display: inline-block; margin-bottom: 16px; border-radius: 16px; line-height: 0; }
+  .brand-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .site-logo {
+    display: inline-block;
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+    box-sizing: content-box;
+    /* במצב כהה הסמל יושב על אריח בהיר, כי גוף השור בכחול כהה ייבלע ברקע הכהה */
+    padding: var(--logo-pad);
+    background: var(--logo-plate);
+    border-radius: 14px;
+  }
+  @media (max-width: 480px) { .site-logo { height: 48px; } }
   header.masthead .lede { font-size: 1.05rem; color: var(--fg-muted); max-width: 640px; }
   .disclosure-link {
     display: inline-block;
@@ -307,6 +333,9 @@
 
   <header class="masthead" id="top">
     <!-- תאריך העדכון מופיע רק כאן; שאר העמוד מפנה אליו -->
+    <a href="#top" class="brand-link" aria-label="דף הבית">
+      <img src="assets/logo-site.png" alt="מדריך הבורסה וההשקעות" class="site-logo" width="66" height="64">
+    </a>
     <div class="eyebrow">מדריך למשקיע העצמאי · עודכן <time datetime="2026-10">אוקטובר 2026</time></div>
     <h1>איזו פלטפורמת מסחר עצמאי מתאימה לך?</h1>
     <p class="lede">
